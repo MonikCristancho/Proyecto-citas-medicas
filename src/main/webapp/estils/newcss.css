@@ -1,0 +1,23 @@
+#a{
+    font-style: italic;
+    color:  #49A2CF ;
+    font-size: 20px;
+    background-color: #DCDCDC ;
+    text-align: center;
+    padding: 3px 20px;
+    border: #808080 5px double;
+    border-radius: 20px;
+    
+}
+#b{
+    
+    border: black 3px solid;
+}
+#prueba{
+    background-color: #FCFAF8 ; 
+    
+}
+
+#calor_fondo{
+    background-color: #F5F5F5 ; 
+}
