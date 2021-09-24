@@ -1,0 +1,83 @@
+===Base de datos cosultorioonline
+
+== Estructura de tabla para la tabla administrador
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**identificacionAdministradorPK**//|int(11)|No|
+|nombreAdministrador|varchar(50)|No|
+|apellidoAdministrador|varchar(50)|No|
+|**celularAdministrador**|bigint(20)|No|
+|**contraseñaAdministrador**|varchar(50)|No|
+== Volcado de datos para la tabla administrador
+
+|1025320325|Ana Cecilia|Perez Rodriguez|3043272909|ACPr1025
+|1111345654|Luis Angel|Castro Rodriguez|3213245666|Luis1111
+|1111345655|Mario Felipe|Castro Rincon|3211234567|Qazsd12345
+== Estructura de tabla para la tabla agenda
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**idMedicoPK**//|int(11)|No|
+|fechaCita|date|No|
+|horaCita|time|No|
+|epsCita|varchar(50)|No|
+|consultorio|int(11)|No|
+|nombremedico|varchar(50)|No|
+|apellidomedico|varchar(50)|No|
+|identificacionMedicoFK|int(11)|Sí|NULL
+|identificacionAdministradorFK|int(11)|Sí|NULL
+== Volcado de datos para la tabla agenda
+
+== Estructura de tabla para la tabla agendapersona
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|idMedicoFK|int(11)|Sí|NULL
+|DocumentoFK|int(11)|Sí|NULL
+== Volcado de datos para la tabla agendapersona
+
+== Estructura de tabla para la tabla medico
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**identificacionMedicoPK**//|int(11)|No|
+|nombreMedico|varchar(50)|No|
+|apellidoMedico|varchar(50)|No|
+|**celularMedico**|bigint(20)|No|
+|ciudadMedico|varchar(50)|No|
+|ipsMedico|varchar(50)|No|
+|epsMedico|varchar(50)|No|
+== Volcado de datos para la tabla medico
+
+|89234345|Andres Fernado|Mejia Prieto|3213124567|Bogotá|201|Compensar
+|98123321|Juan Felipe|Miranda Velez|3113324567|Barranquilla|201|Famisanar
+|1020534456|Andres Camilo|Gomez Rojas|3153385767|Cucuta|201|Sanitas
+|1023434523|Maria Fernanda|Torres Hurtado|3113124567|Bogotá|104|Nueva Eps
+|1030544344|Andres Felipe|Rodriguez Gonzales|3003385734|Bogotá|301|Compensar
+== Estructura de tabla para la tabla persona
+
+|------
+|Columna|Tipo|Nulo|Predeterminado
+|------
+|//**DocumentoPK**//|int(11)|No|
+|nombrePersona|varchar(50)|No|
+|apellidoPersona|varchar(50)|No|
+|telefonoFijo|int(11)|Sí|NULL
+|celularPersona|bigint(50)|No|
+|edad|tinyint(4)|No|
+|contrasenaPersona|varchar(50)|No|
+|fechaNacimiento|date|No|
+|ciudadpersona|varchar(50)|No|
+|barrio|varchar(50)|Sí|NULL
+|direccion|varchar(50)|No|
+|correoElectronico|varchar(50)|No|
+|espPersona|varchar(50)|No|
+|ipsPersona|varchar(50)|No|
+== Volcado de datos para la tabla persona
+
+|1022344250|Andres Camilo|Venegas Castro|7952514|3002854500|33|Andr3s+90|0000-00-00|Bogotá|El Paseo|Carrera 71 BIs # 64 - 30|andres15venegas@hotmail.com|Nueva Eps|Cafam Calle 51

@@ -1,0 +1,110 @@
+CREATE DATABASE cosultorioOnline;
+USE cosultorioOnline;
+
+
+CREATE TABLE persona(
+
+DocumentoPK INT PRIMARY KEY,
+    nombrePersona VARCHAR(50) NOT NULL,
+    apellidoPersona VARCHAR(50) NOT NULL,
+    telefonoFijo INT NULL,
+    celularPersona BIGINT NOT NULL,
+    edad TINYINT NOT NULL,
+    contrasenaPersona VARCHAR(50) NOT NULL,
+    fechaNacimiento DATE NOT NULL,
+    ciudadpersona VARCHAR(50) NOT NULL,
+    barrio VARCHAR(50) NULL,
+    direccion VARCHAR(50) NOT NULL,
+    correoElectronico VARCHAR(50) NOT NULL,
+    espPersona VARCHAR(50) NOT NULL,
+    ipsPersona VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE medico
+(
+    identificacionMedicoPK INT PRIMARY KEY,
+    nombreMedico VARCHAR(50) NOT NULL,
+    apellidoMedico VARCHAR(50) NOT NULL,
+    celularMedico BIGINT NOT NULL UNIQUE,
+    ciudadMedico VARCHAR(50) NOT NULL,
+    consultorio INT(11) NOT NULL,
+    epsMedico VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE administrador
+(
+    identificacionAdministradorPK INT PRIMARY KEY,
+    nombreAdministrador VARCHAR(50) NOT NULL,
+    apellidoAdministrador VARCHAR(50) NOT NULL,
+    celularAdministrador INT NOT NULL UNIQUE,
+    contraseñaAdministrador VARCHAR(50) NOT NULL UNIQUE
+); 
+
+CREATE TABLE agenda
+(
+    idMedicoPK INT PRIMARY KEY,
+    fechaCita DATE NOT NULL,
+    horaCita TIME NOT NULL,
+    epsCita VARCHAR(50) NOT NULL,
+    ipsMedico VARCHAR(50) NOT NULL,
+    nombremedico VARCHAR(50) NOT NULL,
+    apellidomedico VARCHAR(50) NOT NULL
+);
+
+
+ALTER TABLE agenda
+ADD identificacionAdministradorFK INT;
+ALTER TABLE agenda
+ADD identificacionMedicoFK INT;
+ALTER TABLE agenda
+ADD FOREIGN KEY (identificacionAdministradorFK)
+REFERENCES administrador (identificacionAdministradorPK);
+ALTER TABLE agenda
+ADD FOREIGN KEY (identificacionMedicoFK)
+REFERENCES medico ( identificacionMedicoPK);
+
+
+ALTER TABLE agendapersona
+ADD idMedicoFK INT;
+
+ALTER TABLE agendapersona
+ADD FOREIGN KEY (idMedicoFK)
+REFERENCES agenda (idMedicoPK);
+
+ALTER TABLE agendapersona
+ADD DocumentoFK INT;
+
+ALTER TABLE agendapersona
+ADD FOREIGN KEY (DocumentoFK)
+REFERENCES persona (DocumentoPK);
+
+
+INSERT INTO medico VALUES
+(89234345,"Andres Fernado","Mejia Prieto", 3213124567,"Bogotá",201,"Compensar"),
+(1023434523,"Maria Fernanda","Torres Hurtado", 3113124567,"Bogotá",104,"Nueva Eps"),
+(17456567,"Monica","Morales Torres", 3165124567,"Cali",111,"Compensar"),
+(98123321,"Juan Felipe","Miranda Velez", 3113324567,"Barranquilla",201,"Famisanar"),
+(1020534456,"Andres Camilo","Gomez Rojas", 3153385767,"Cucuta",201,"Sanitas"),
+(1030544344,"Andres Felipe","Rodriguez Gonzales", 3003385734,"Bogotá",301,"Compensar");
+
+
+INSERT INTO administrador VALUES
+(1111345655,"Mario Felipe","Castro Rincon", 3223253455,"Qazsd12345"),
+(1025320325,"Ana Cecilia","Perez Rodriguez", 3043272909,"ACPr1025"),
+(1111345654,"Luis Angel","Castro Rodriguez", 3213245666,"Luis1111");
+
+
+UPDATE administrador 
+SET celularAdministrador = 3211234567 
+WHERE identificacionAdministradorPK = 1111345655 
+AND nombreAdministrador = 'Mario Felipe' 
+AND apellidoAdministrador = 'Castro Rincon'
+AND contraseñaAdministrador = "Qazsd12345";
+
+
+DELETE FROM medico
+WHERE identificacionMedicoPK = 17456567;
+
+
+
+
