@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/09/2021, 02:45:11 PM
+    Author     : ginis
+*/
+
+*{
+    margin: 30px;
+    background-color: #DCDCDC;
+}
+
+#a1{
+    font-style: italic;
+    color:  #49A2CF ;
+    font-size: 30px;
+    text-align: center;
+    padding: 3px 20px; 
+    border: #808080 5px double;
+    border-radius: 20px;
+}
+#a2{
+    font-style: normal;
+    color:  #778899 ;
+    font-size: 20px;
+    text-align: center;
+    padding: 3px 20px; 
+}
+
+#a3{
+    font-style: normal;
+    color:  #778899 ;
+    font-size: 20px;
+    text-align: center;
+}
+#a4{
+    border: #808080 5px double;
+    border-radius: 20px;
+}
+
+form{
+    font-size: 20px;
+    color: black;
+    background-color: #DCDCDC;
+}
+
+label{
+    font-size: 20px;
+    color: black;
+    background-color: #DCDCDC;
+    text-align: center;
+    margin: 10px;
+}
+
+input{
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    border: #808080 5px double;
+    text-align: center;
+    margin: 10px;
+}
+
+button{
+    font-size: 20px;
+    color: black;
+    background-color: silver;
+    margin: 10px;
+}
