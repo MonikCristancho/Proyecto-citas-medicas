@@ -8,8 +8,92 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <title>AdministracionCitas</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="assets/estilos/tables.css" rel="stylesheet" type="text/css"/>
     </head>
+    <body style = "background-color: #DCDCDC">
+
     <body>
-        <div>TODO write content</div>
+        <div>
+            <table id="header" style="width: 100%; height: 80px">
+                <tr>
+                    <th style="width: 80%"><h1>Administrar Citas</h1></th>
+                    <th style="width: 20%"><h4><a href="MenuAdministrativo.html">Regresar</a></h4></th>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h3>Consultar Paciente: </h3>
+            <form action="AdministracionCitas.html" method="POST">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: right">Documento: </td>
+                            <td><input type="text" placeholder="Consultar por documento" name="documento"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right">Código de cita: </td>
+                            <td><input type="text" placeholder="Consultar por cita" name="codigoCita"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="submit" value="Consultar"></td>
+                        </tr>
+                    </tbody>
+                    
+                   
+                </table>
+                            
+            </form>
+
+        </div>
+        <div>
+            <center>
+                <table id="citas">
+                    <tr>
+                        <th>Codigo Cita</th>
+                        <th>Paciente</th>
+                        <th>Documento</th>
+                        <th>Médico</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    
     </body>
 </html>
