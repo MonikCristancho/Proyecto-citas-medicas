@@ -1,0 +1,46 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 26/09/2021, 06:04:25 PM
+    Author     : Vale_Atenas
+*/
+*{
+    margin: 30px;
+    
+}
+#header{
+    font-style: italic;
+    color:  #49A2CF ;
+    font-size: 30px;
+    text-align: center;
+    padding: 3px 20px; 
+    border: #808080 5px double;
+    border-radius: 20px;
+}
+#citas{
+    border-collapse: collapse;
+    width: 100%
+}
+#citas td, #citas th{
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center
+}
+
+#citas tr:nth-child(even){
+    background-color: #d7d8da;
+}
+
+#citas tr:hover{
+    background-color: gray;
+}
+
+#citas th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #bacbe6;
+    
+}
