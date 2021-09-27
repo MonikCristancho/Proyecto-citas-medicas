@@ -13,22 +13,30 @@ and open the template in the editor.
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <center>
-            <table style="width: 80%">
-                <th style="width: 60%" id="a1"> <h1> <b> Menu Usuario  </b> </h1></th>
-                <th style="width: 20%" id="a1"> <h4> <a href="index.html" id="a2">Cerrar Sesion</a></h4></th> 
-            </table>
-            <table style="height: 70%" id="a3">
-                <th> 
-                    <ol>
-                        <li> <a href="visualizar_usuario.html">Datos Usuario</a> </li>
-                        <li> Reserva de Cita</li>
-                        <li> <a href="ModificacionCita.html">Modificacion de Cita</a></li>
-                        <li> <a href="cancelacion_cita.html">Cancelacion de Cita</a> </li>
-                    </ol>
-                </th>>
-            </table>
-        </center>
+        <div class="container-fluid">
+            <div class="grid">
+                <div class="g-col-md-12">
+                    <table style="width: 100%;margin-left: -10px">
+                        <td style="width: 70%" id="a1"> <h1> <b> Menu Usuario  </b> </h1></td>
+                        <td style="width: 30%; padding: 0" id="a1">  <a href="index.html" style="margin: 0; padding: 0" id="a2">Cerrar Sesion</a> </td> 
+                    </table>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="g-col-md-12">
+                    <table style="height: 100%" id="a3">
+                        <th> 
+                            <ol>
+                                <li> <a href="visualizar_usuario.html">Datos Usuario</a> </li>
+                                <li> Reserva de Cita</li>
+                                <li> <a href="ModificacionCita.html">Modificacion de Cita</a></li>
+                                <li> <a href="cancelacion_cita.html">Cancelacion de Cita</a> </li>
+                            </ol>
+                        </th>
+                    </table>
+                </div>
+            </div>
+        </div>
     <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>
