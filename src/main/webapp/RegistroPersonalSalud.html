@@ -13,45 +13,55 @@ and open the template in the editor.
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <center>
-            <table style="width: 80%">
-                <th style="width: 60%" id="a1"> <h1> <b> Registro Medico </b> </h1></th>
-                <th style="width: 20%" id="a1"> <h4> <a href="MenuAdministrativo.html" id="a2">Menu administrativo</a></h4></th> 
-            </table>
-            <table style="width: 50%">
-                <th>
-                    <form action="MenuAdministrativo.html" method="POST" id="a4">
-                        <div>
-                            <label> Nombre: </label>
-                            <input type="text" name="nombreMedico">
-                        </div>
-                        <div>
-                            <label> Apellido: </label>
-                            <input type="text" name="apellidoMedico">
-                        </div>
-                        <div>
-                            <label> Celular: </label>
-                            <input type="tel" name="celularMedico">
-                        </div>
-                        <div>
-                            <label> Ciudad: </label>
-                            <input type="text" name="apellidoMedico">
-                        </div>
-                        <div>
-                            <label> IPS a la que trabaja: </label>
-                            <input type="text" name="ipsMedico">
-                        </div>
-                        <div>
-                            <label> EPS a la que trabaja: </label>
-                            <input type="text" name="epsMedico">
-                        </div>
-                        <div>
-                            <button> Guardar </button>
-                        </div>
-                    </form>
-                </th>
-            </table>
-        </center>
+        <div class="container-fluid">
+            <center style="margin: 0">
+                <div class="grid">
+                    <div class="g-col-md-12">
+                        <table style="width: 100%;margin-left: -10px">
+                            <th style="width: 70%" id="a1"> <h1> <b> Registro Medico </b> </h1></th>
+                            <th style="width: 30%; padding: 0" id="a1"> <a href="MenuAdministrativo.html" style="margin: 0; padding: 0" id="a2">Menu administrativo</a></th> 
+                        </table>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="g-col-md-12">
+                        <table style="width: 50%">
+                            <th>
+                                <form action="MenuAdministrativo.html" method="POST" id="a4">
+                                    <div>
+                                        <label> Nombre: </label>
+                                        <input type="text" name="nombreMedico">
+                                    </div>
+                                    <div>
+                                        <label> Apellido: </label>
+                                        <input type="text" name="apellidoMedico">
+                                    </div>
+                                    <div>
+                                        <label> Celular: </label>
+                                        <input type="tel" name="celularMedico">
+                                    </div>
+                                    <div>
+                                        <label> Ciudad: </label>
+                                        <input type="text" name="apellidoMedico">
+                                    </div>
+                                    <div>
+                                        <label> IPS a la que trabaja: </label>
+                                        <input type="text" name="ipsMedico">
+                                    </div>
+                                    <div>
+                                        <label> EPS a la que trabaja: </label>
+                                        <input type="text" name="epsMedico">
+                                    </div>
+                                    <div style="display: flex; align-items: center; justify-content: space-around">
+                                        <button> Guardar </button>
+                                    </div>
+                                </form>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+            </center>
+        </div>
     <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>

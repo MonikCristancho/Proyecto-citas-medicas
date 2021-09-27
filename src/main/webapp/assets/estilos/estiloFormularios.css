@@ -9,14 +9,18 @@ and open the template in the editor.
 */
 
 *{
-    margin: 30px;
+    margin: 10px;
     background-color: #DCDCDC;
+}
+
+body{
+    background-color: #DCDCDC!important;
 }
 
 #a1{
     font-style: italic;
     color:  #49A2CF ;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding: 3px 20px; 
     border: #808080 5px double;
@@ -25,7 +29,7 @@ and open the template in the editor.
 #a2{
     font-style: normal;
     color:  #778899 ;
-    font-size: 20px;
+    font-size: 10px;
     text-align: center;
     padding: 3px 20px; 
 }

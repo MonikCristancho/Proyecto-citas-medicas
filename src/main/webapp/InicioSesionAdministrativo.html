@@ -13,29 +13,41 @@ and open the template in the editor.
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <center>
-            <table style="width: 80%">
-                <th style="width: 60%" id="a1"> <h1> <b> Inicio Sesión Administrativo  </b> </h1></th>
-                <th style="width: 20%" id="a1"> <h4> <a href="index.html" id="a2">Pagina Principal</a></h4></th> 
-            </table>
-            <table style="width: 50%">
-                <th>
-                    <form action="MenuAdministrativo.html" method="POST">
-                        <div>
-                            <label> Usuario </label>
-                            <input type="text" name="nombreAdminitrador">
-                        </div>
-                        <div>
-                            <label> Contraseña </label>
-                            <input type="password" name="contraseñaAdminitrador">
-                        </div>
-                        <div>
-                            <button> Iniciar Sesión </button>
-                        </div>
-                    </form>
-                </th>
-            </table>
-        </center>
+        <div class="container-fluid">
+            <center style="margin: 0">
+                <div class="grid">
+                    <div class="g-col-md-12">
+                        <table style="width: 100%;margin-left: -30px">
+                            <th style="width: 60%" id="a1"> <h1> <b> Inicio Sesión Administrativo  </b> </h1></th>
+                            <th style="width: 40%; padding: 0" id="a1"> <h4> <a href="index.html" style="margin: 0; padding: 0" id="a2">Pagina Principal</a></h4></th> 
+                        </table>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="g-col-md-12">
+                        <table style="width: 50%">
+                            <th>
+                                <form action="MenuAdministrativo.html" method="POST">
+                                    <div>
+                                        <label> Usuario </label>
+                                        <input type="text" name="nombreAdminitrador">
+                                    </div>
+                                    <div>
+                                        <label> Contraseña </label>
+                                        <input type="password" name="contraseñaAdminitrador">
+                                    </div>
+                                    <div>
+                                        <div style="display: flex; align-items: center; justify-content: space-around">
+                                            <button> Iniciar Sesión </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </th>
+                        </table>
+                    </div>
+                </div>
+            </center>
+        </div>
     <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>
