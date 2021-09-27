@@ -7,21 +7,31 @@
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <center>
-            <table style="width: 70%">
-                <tr > <h1 id="a"> <b> Asignacion de Citas Medicina General para Colombia  </b> </h1></tr> 
-            </table>
-            <table style="width: 60%">
-                <tr>
-                    <th style="width: 30%; height: 400px"> <img src="assets/img/imgPrincipal.jfif" style="width: 400px; height: 400px"> </th>
-                    <th style="width: 30%; height: 300px">
-                        <p> Aca podras asignar citas de medicina general, sin importar en que <b>ciudad</b> estes o a que <b>EPS</b> e <b>IPS</b> pertenezcas </p> 
-                        <button class="InicioUsuario"><a href="InicioSesionUsuario.html"> <b id="texbutton">Usuario </b> </a></button> <br>
-                        <button class="InicioAdministrativo"><a href="InicioSesionAdministrativo.html"> <b id="texbutton">Administrativo </b> </a></button>
-                    </th>
-                </tr>
-            </table>
-        </center>
+        <div class="container-fluid">
+            <div class="grid">
+                <div class="g-col-md-6">
+                    <table style="width: 100%">
+                        <tr > <h1 id="a"> <b> Asignacion de Citas Medicina General para Colombia  </b> </h1></tr> 
+                    </table>
+                </div>
+                <div class="g-col-md-6">
+                    <center>
+                    <table style="width: 100%">
+                        <tr>
+                            <td style="width: 50%"> <img src="assets/img/imgPrincipal.jfif" sizes="(min-width: 600px) 400px, 50vw"> </td>
+                            <td style="width: 50%">
+                                <p> Aca podras asignar citas de medicina general, sin importar en que <b>ciudad</b> estes o a que <b>EPS</b> e <b>IPS</b> pertenezcas </p> 
+                                <div style="display: flex; align-items: center; justify-content: space-around">
+                                    <button class="InicioUsuario"><a href="InicioSesionUsuario.html"> <b id="texbutton">Usuario </b> </a></button> <br> <br>
+                                    <button class="InicioAdministrativo"><a href="InicioSesionAdministrativo.html"> <b id="texbutton">Administrativo </b> </a></button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    </center>
+                </div>
+            </div>
+        </div>
     <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>

@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : ginis
 */
 *{
-    margin: 30px;
+    margin: 10px;
     background-color: #DCDCDC;
 }
 
@@ -19,8 +19,7 @@ and open the template in the editor.
     text-align: center;
     padding: 3px 20px; 
     border: #808080 5px double;
-    border-radius: 20px;
-    
+    border-radius: 20px;   
 }
 
 p{
@@ -28,14 +27,18 @@ p{
     font-size: 20px;
     color: black;
     background-color: #DCDCDC;
+    text-align: center;
 }
 
 button{
     font-size: 20px;
     color: black;
     background-color: silver;
+    text-align: center;
 }
-
+a{
+    background-color: silver!important;
+}
 #texbutton{
     background-color: silver;
 }
