@@ -1,0 +1,37 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 2, 2021, 8:15:42 PM
+    Author     : Christian
+*/
+
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover{
+    color: white;
+}
+
+.escalarBoton{
+    background-color: rgb(46, 132, 7);
+    color: white;
+    appearance: button;
+    
+}
+
+.escalarBoton:hover{
+    transform: scale(1.2);
+    background-color: rgb(157, 172, 6);
+    transition-property: transform;
+    transition-duration: .1s;
+}
+
+.escalarBoton:active{
+    transform: scale(1.1);
+    transition-property: transform;
+    transition-duration: .1s;
+}

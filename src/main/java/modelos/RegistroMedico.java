@@ -12,4 +12,7 @@ package modelos;
  */
 public class RegistroMedico {
 
+    String producto;
+    
+    
 }

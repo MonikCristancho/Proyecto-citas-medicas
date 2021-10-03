@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
     <head>
-        <title>Menu Administrativo</title>
+        <title>Menu Administrativos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="assets/estilos/estiloMenu.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/estilos/estiloMenuInicio.css" rel="stylesheet" type="text/css"/>
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/estilos/estilosBotones.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body style = "background-color: #DCDCDC">
-
     <body>
-        <div class="container-fluid">
-            <div class="grid">
-                <div class="g-col-md-12">
-                    <table style="width: 100%;margin-left: -43px">
-                        <td style="width: 70%" id="a1"> <h2> <b> Menu Administrativo  </b> </h2></td>
-                        <td style="width: 30%; padding: 0" id="a1">  <a href="index.html" style="margin: 0; padding: 0" id="a2">Cerrar Sesion</a> </td> 
+        <header>
+            <center>
+                <div class="container table-responsive-sm" style="width: 90%; margin: 20px">
+                    <table class="table table-borderless text-center margenMenu">
+                        <tr>
+                            <td style="width: 20%">
+                                <img src="assets/img/log-medicina.png" style="width: 80%" alt=""/>
+                            </td> 
+                            <td class="align-middle" style="width: 50%">
+                                <h3>Bienvenido, Administrativo</h3>
+                            </td>
+                            <td class="align-middle" style="width: 20%">
+                                <a href="index.html"><h6>Cerrar sesion</h6></a>
+                            </td>
+                        </tr>
                     </table>
                 </div>
-            </div>
-            <div class="grid">
-                <div class="g-col-md-12">
-                    <table style="height: 100%" id="a3">
-                        <th> 
-                            <ol>
-                                <li> <a href="RegistroPersonalSalud.html">Registro Usuario</a> </li>
-                                <li> <a href="AdministracionCitas.html">Administracion Citas Paciente</a> </li>
-                            </ol>
-                        </th>
-                    </table>
+            </center>
+        </header>
+        
+        <section>
+            <div class="container text-center" style="margin-top: 70px; margin-bottom: 70px; width: 90%">
+                <div class="row gx-5" style="font-size: 26px">
+                    <div class="col">
+                        <a href="RegistroPersonalSalud.html" class="p-5 align-middle escalarBoton border border-1 rounded-pill">Registro Medico</a>
+                    </div>
+                    <div class="col">
+                        <a href="AdministracionCitas.html " class="p-5 align-middle escalarBoton border border-1 rounded-pill">Administracion Citas Pacientes</a>
+                    </div>
+                    <div class="col ">
+                        <a href=" " class="p-5 align-middle escalarBoton border border-1 rounded-pill">Agenda Citas</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        </section>
+        <footer>
+            <div class="container table-responsive-md mx-auto" style="margin: 20px;">
+                <table class="table table-borderless border border-1 mx-auto margenMenu rounded">
+                    <tr>
+                        <td class="text-center align-middle" style="width: 30%">
+                            <img src="assets/img/log-medicina.png" style="width: 80%" alt=""/>
+                        </td>
+                        <td class="align-middle">
+                            <p style="font-size: 16px"><h5>Integrantes:</h5></p>
+                            <div class="row">
+                                <div class="col">
+                                    <ul style="font-size: 12px">
+                                        <li><h6>Andres Venegas</h6></li>
+                                        <li><h6>Monica Cristancho</h6></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul style="font-size: 12px">
+                                        <li><h6>Gina Becerra</h6></li>
+                                        <li><h6>Diego Omana</h6></li>
+                                    </ul>
+                                 </div>
+                                <div class="col">
+                                    <ul style="font-size: 12px">
+                                        <li><h6>Christian Ordoñez</h6></li> 
+                                    </ul>
+                                 </div>
+                            </div>
+                        </td>
+                        <td class="text-center align-middle">
+                            <img src="assets/img/channels-642_misiontic_logo.png" style="width: 80%" alt=""/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+        <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>

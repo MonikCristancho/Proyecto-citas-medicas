@@ -1,53 +1,52 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>Inicio Sesion Administrativo</title>
+        <title>Inicio Sesión Administrativo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="assets/estilos/estiloFormularios.css" rel="stylesheet" type="text/css"/>
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/estilos/estiloLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div class="container-fluid">
-            <center style="margin: 0">
-                <div class="grid">
-                    <div class="g-col-md-12">
-                        <table style="width: 100%;margin-left: -30px">
-                            <th style="width: 60%" id="a1"> <h1> <b> Inicio Sesión Administrativo  </b> </h1></th>
-                            <th style="width: 40%; padding: 0" id="a1"> <h4> <a href="index.html" style="margin: 0; padding: 0" id="a2">Pagina Principal</a></h4></th> 
-                        </table>
+        <div class="container table-responsive-md mx-auto" style="margin: 20px">   
+            <div class="center-screen" style="align-items: center">
+                <form method="POST" action="MenuAdministrativo.html" style="width: 90%">
+                    <div>
+                        <table class="w3-col" style="width: 90%">
+                    <tr>
+                        <td style="color: #4083b5; width: 60%">
+                            <h2>Inicio de Sesion para administrativos</h2>
+                        </td>
+                        <td style="width: 10%"> 
+                            <a href="index.html"><img src="assets/img/Inicio.png" class="rounded-circle imageCustom" alt="" style="width: 80%"/></a>
+                            <h5 style="color: #407d24"> <b>Volver</b></h5>
+                        </td>
+                    </tr>
+                    </table>
                     </div>
-                </div>
-                <div class="grid">
-                    <div class="g-col-md-12">
-                        <table style="width: 50%">
-                            <th>
-                                <form action="MenuAdministrativo.html" method="POST">
-                                    <div>
-                                        <label> Usuario </label>
-                                        <input type="text" name="nombreAdminitrador">
-                                    </div>
-                                    <div>
-                                        <label> Contraseña </label>
-                                        <input type="password" name="contraseñaAdminitrador">
-                                    </div>
-                                    <div>
-                                        <div style="display: flex; align-items: center; justify-content: space-around">
-                                            <button> Iniciar Sesión </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </th>
-                        </table>
+                    <div style="align-items: center; margin-left: -40px">
+                        <img class="align-middle" src="assets/img/log-medicina.png" alt=""/>
                     </div>
-                </div>
-            </center>
+                    <div class="form-floating mb-3" >
+                         <input type="text" class="form-control" name="nombreAdministrador" id="floatingInput" placeholder="Usuario: " required>
+                         <label for="floatingInput">Usuario:</label>
+                    </div>
+                    <div class="form-floating mb-3" >
+                         <input type="password" class="form-control" name="contrasenaAdministrativo" id="floatingInput" placeholder="Contraseña: " required>
+                         <label for="floatingInput">Contraseña:</label>
+                    </div>
+                    <button class="btn btn-lg w-100 btn-outline-success" type="submit" name="btnAction" value="Ingresar" style="width: 70%">Ingresar</button>
+                    <div>
+                        <a href="RestablecerContraseña_usuario.html"><h3>¿Olvidaste tu contraseña?</h3></a>
+               </div>
+               <div>
+                   <h3>¿Es la primera ves que ingresas? </h3>
+                   <a href="" id="a3"><h3>Crea tu cuenta</h3></a>
+               </div>
+                </form>
+            </div>
         </div>
-    <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>
