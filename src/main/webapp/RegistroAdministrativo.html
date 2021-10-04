@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Inicio Sesión Administrativo</title>
+        <title>Registro Administrativo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -11,16 +11,15 @@
     <body>
         <div class="container table-responsive-md mx-auto" style="margin: 20px">   
             <div class="center-screen" style="align-items: center">
-                <form method="POST" action="MenuAdministrativo.html" style="width: 90%">
+                <form method="POST" action="InicioSesionAdministrativo.html" style="width: 90%">
                     <div>
                         <table class="w3-col" style="width: 90%">
                     <tr>
                         <td style="color: #4083b5; width: 60%">
-                            <h2>Inicio de Sesion para administrativos</h2>
+                            <h2>Registro para administrativos</h2>
                         </td>
                         <td style="width: 10%"> 
-                            <a href="index.html"><img src="assets/img/Inicio.png" class="rounded-circle imageCustom" alt="" style="width: 80%"/></a>
-                            <h5 style="color: #407d24"> <b>Volver</b></h5>
+                            <a href="InicioSesionAdministrativo.html"><h5 style="color: #407d24"> <b>Volver</b></h5></a>
                         </td>
                     </tr>
                     </table>
@@ -29,21 +28,26 @@
                         <img class="align-middle" src="assets/img/log-medicina.png" alt=""/>
                     </div>
                     <div class="form-floating mb-3" >
+                         <input type="text" class="form-control" name="nombreAdministrador" id="floatingInput" placeholder="Nombre: " required>
+                         <label for="floatingInput">Nombre:</label>
+                    </div>
+                    <div class="form-floating mb-3" >
+                         <input type="text" class="form-control" name="apellidoAdministrador" id="floatingInput" placeholder="Apellido: " required>
+                         <label for="floatingInput">Apellido:</label>
+                    </div>
+                    <div class="form-floating mb-3" >
+                         <input type="tel" class="form-control" name="celularAdministrador" id="floatingInput" placeholder="Celular: " required>
+                         <label for="floatingInput">Celular:</label>
+                    </div>
+                    <div class="form-floating mb-3" >
                          <input type="email" class="form-control" name="correoAdministrador" id="floatingInput" placeholder="Usuario: " required>
-                         <label for="floatingInput">Usuario:</label>
+                         <label for="floatingInput">Correo Electronico:</label>
                     </div>
                     <div class="form-floating mb-3" >
                          <input type="password" class="form-control" name="contrasenaAdministrativo" id="floatingInput" placeholder="Contraseña: " required>
                          <label for="floatingInput">Contraseña:</label>
                     </div>
-                    <button class="btn btn-lg w-100 btn-outline-success" type="submit" name="btnAction" value="IngresarAdministrativo" style="width: 70%">Ingresar</button>
-                    <div>
-                        <a href="RestablecerContraseña_usuario.html"><h3>¿Olvidaste tu contraseña?</h3></a>
-                    </div>
-                    <div>
-                        <h3>¿Es la primera ves que ingresas? </h3>
-                        <a href="RegistroAdministrativo.html" id="a3"><h3>Crea tu cuenta</h3></a>
-                    </div>
+                    <button class="btn btn-lg w-100 btn-outline-success" type="submit" name="btnAction" value="RegistrarAdministrativo" style="width: 70%">Registrarse</button>
                 </form>
             </div>
         </div>
