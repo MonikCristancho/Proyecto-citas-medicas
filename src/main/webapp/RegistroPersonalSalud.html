@@ -1,67 +1,194 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <html>
     <head>
-        <title>Registro Personal Salud</title>
+        <title>Registro Medico</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="assets/estilos/estiloFormularios.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/estilos/estiloMenuInicio.css" rel="stylesheet" type="text/css"/>
         <link href="assets/bootstrap-5.1.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/estilos/estilosBotones.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/estilos/estiloLogin.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div class="container-fluid">
-            <center style="margin: 0">
-                <div class="grid">
-                    <div class="g-col-md-12">
-                        <table style="width: 100%;margin-left: -10px">
-                            <th style="width: 70%" id="a1"> <h1> <b> Registro Medico </b> </h1></th>
-                            <th style="width: 30%; padding: 0" id="a1"> <a href="MenuAdministrativo.html" style="margin: 0; padding: 0" id="a2">Menu administrativo</a></th> 
-                        </table>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="g-col-md-12">
-                        <table style="width: 50%">
-                            <th>
-                                <form action="MenuAdministrativo.html" method="POST" id="a4">
-                                    <div>
-                                        <label> Nombre: </label>
-                                        <input type="text" name="nombreMedico">
-                                    </div>
-                                    <div>
-                                        <label> Apellido: </label>
-                                        <input type="text" name="apellidoMedico">
-                                    </div>
-                                    <div>
-                                        <label> Celular: </label>
-                                        <input type="tel" name="celularMedico">
-                                    </div>
-                                    <div>
-                                        <label> Ciudad: </label>
-                                        <input type="text" name="ciudadMedico">
-                                    </div>
-                                    <div>
-                                        <label> IPS a la que trabaja: </label>
-                                        <input type="text" name="ipsMedico">
-                                    </div>
-                                    <div>
-                                        <label> EPS a la que trabaja: </label>
-                                        <input type="text" name="epsMedico">
-                                    </div>
-                                    <div style="display: flex; align-items: center; justify-content: space-around">
-                                        <button> Guardar </button>
-                                    </div>
-                                </form>
-                            </th>
-                        </table>
-                    </div>
+        <header>
+            <center>
+                <div class="container table-responsive-sm" style="width: 90%; margin: 20px; align-items: center">
+                    <table class="table table-borderless text-center margenMenu">
+                        <tr>
+                            <td style="width: 20%">
+                                <img src="assets/img/log-medicina.png" style="width: 80%" alt=""/>
+                            </td> 
+                            <td class="align-middle" style="width: 50%">
+                                <h2>Registro Medico</h2>
+                            </td>
+                            <td style="width: 30%; align-items: center"> 
+                            <a href="MenuAdministrativo.html"><h5 style="color: #407d24"> <b>Volver</b></h5></a>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </center>
+        </header>
+        <div class="container table-responsive-md mx-auto" >   
+            <div class="center-screen" style="align-items: center; margin: -60px">
+                <form method="POST" action="MenuAdministrativo.html" style="width: 90%">
+                    <div class="form-floating mb-3" >
+                        <input type="text" class="form-control" name="nombreMedico" id="floatingInput" placeholder="Nombre: " required>
+                        <label for="floatingInput">Nombre:</label>
+                    </div>
+                    <div class="form-floating mb-3" >
+                        <input type="text" class="form-control" name="apellidoMedico" id="floatingInput" placeholder="Apellido: " required>
+                        <label for="floatingInput">Apellido:</label>
+                    </div>
+                    <div class="form-floating mb-3" >
+                        <input type="tel" class="form-control" name="celularMedico" id="floatingInput" placeholder="Celular: " required>
+                        <label for="floatingInput">Celular:</label>
+                    </div>
+                    <div class="form-floating mb-3" >
+                        <input type="text" class="form-control" name="ciudadMedico" id="floatingInput" placeholder="Ciudad: " required>
+                        <label for="floatingInput">Ciudad:</label>
+                    </div>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="EPS" required>
+                        <option value="">Seleccione la EPS:</option>
+                        <option value="1">AIC EPSI</option>
+                        <option value="2">ALIANSALUS E.P.S.</option>
+                        <option value="3">AMBUQ EPSS</option>
+                        <option value="4">ANAS WAYUU EPSI</option>
+                        <option value="5">ASMET SALUD</option>
+                        <option value="6">CAFESALUD E.P.S.</option>
+                        <option value="7">CAJACOPI</option>
+                        <option value="8">CAPITAL SALUD E.P.S.</option>
+                        <option value="9">CAPRESOCA</option>
+                        <option value="10">COMFACOR</option>
+                        <option value="11">COMFACUNDI</option>
+                        <option value="12">COMFAMILIAR CARTAGENA</option>
+                        <option value="13">COMFAMILIAR CHOCO</option>
+                        <option value="14">COMFAMILIAR NARIÑO</option>
+                        <option value="15">COMFANDI</option>
+                        <option value="16">COMFASUCRE</option>
+                        <option value="17">COMFENALCO VALLE</option>
+                        <option value="18">COMPARTA EPS</option>
+                        <option value="19">COMPENSAR E.P.S.</option>
+                        <option value="20">CONDAMILIARGUAJIRA</option>
+                        <option value="21">CONFABOY</option>
+                        <option value="22">CONFACUNDI</option>
+                        <option value="23">CONFAMILIAR CHOCO</option>
+                        <option value="24">CONFAMILIAR HUILA</option>
+                        <option value="25">CONVIDA</option>
+                        <option value="26">COOMEVA E.P.S S.A.</option>
+                        <option value="27">COOSALUD</option>
+                        <option value="28">CRUZ BLANCA E.P.S.</option>
+                        <option value="29">DASAKAWI</option>
+                        <option value="30">E.P.S. SANITAS</option>
+                        <option value="31">E.P.S. SURAMERICANA S.A.</option>
+                        <option value="32">ECOOPSOS EPS</option>
+                        <option value="33">EMDISALUD</option>
+                        <option value="34">EMSSANAR EPS</option>
+                        <option value="35">FAMISANAR E.P.S</option>
+                        <option value="36">MALLAMAS EPSI</option>
+                        <option value="37">MANEXKA</option>
+                        <option value="38">MEDIMÁS EPS S.A.</option>
+                        <option value="39">MUTUAL SER</option>
+                        <option value="40">NUEVA EPS S.A.</option>
+                        <option value="41">PIJAOS SALUD EPSI</option>
+                        <option value="42">SALUD TOTAL S.A.</option>
+                        <option value="43">SALUDVIDA S.A. E.P.S.</option>
+                        <option value="44">SAVIA SALUD EPS</option>
+                        <option value="45">SOS EPS</option>
+                    </select>
+                    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="IPS" required>
+                        <option value="">Seleccione la IPS:</option>
+                        <option value="1">BIENESTAR I.P.S</option>
+                        <option value="2">CAFAN</option>
+                        <option value="3">CENTRO DE SALUD SAN VICENTE</option>
+                        <option value="4">CENTRO DE SALUD BLAS DE LEZO</option>
+                        <option value="5">CENTRO DE SALUD BOCAS DEL ELE</option>
+                        <option value="6">CENTRO DE SALUD DE CAMPECHE</option>
+                        <option value="7">CENTRO DE SALUD EL CARACOL</option>
+                        <option value="8">CENTRO DE SALUD EL MERIDIANO 70</option>
+                        <option value="9">CENTRO DE SALUD LAS MONAS</option>
+                        <option value="10">CENTRO DE SALUD MIRAMAR</option>
+                        <option value="11">CENTRO DE SALUD NUEVO BOSQUE</option>
+                        <option value="12">CENTRO DE SALUD PITAL</option>
+                        <option value="13">CENTRO DERMATOLOGICO FEDERICO LLERAS ACOSTA - E.S.E. SEDE CHAPINERO</option>
+                        <option value="14">COLSUBSIDIO</option>
+                        <option value="15">EMPRESA SOCIAL DEL ENTADO CENTRO DE REHABILITACION INTEGRAL DE BOYACA</option>
+                        <option value="16">EMPRESA SOCIAL DEL ESTADO CENTRO DERMATOLOGICO FEDERICO LLERAS ACOSTA</option>
+                        <option value="17">EMPRESA SOCIAL DEL ESTADO CLINICA MATERNIDAD RAFAEL CALVO</option>
+                        <option value="18">EMPRESA SOCIAL DEL ESTADO DE BARANOA</option>
+                        <option value="19">EMPRESA SOCIAL DEL ESTADO HOSPITAL DE BARANOA</option>
+                        <option value="20">EMPRESA SOCIAL DEL ESTADO HOSPITAL NIÑO JESUS DE BARRANQUILLA</option>
+                        <option value="21">EMPRESA SOCIAL DEL ESTADO HOSPITAL UNIVERSITARIO DE LA SAMARITANA</option>
+                        <option value="22">EMPRESA SOCIAL DEL ESTADO HOSPITAL UNIVERSITARIO SAN RAFAEL DE TUNJA</option>
+                        <option value="23">EMPRESA SOCIAL DEL ESTADO JAIME ALVARADO Y CASTILLA</option>
+                        <option value="24">EMPRESA SOCIAL DEL ESTADO SANTIAGO DE TUNJA</option>
+                        <option value="25">ESE HOSPITAL LOCAL CARTAGENA DE INDIAS</option>
+                        <option value="26">ESE HOSPITAL LOCAL ISMAEL ROLDAN VALENCIA</option>
+                        <option value="27">ESE HOSPITAL SAN ANTONIO DE ANOLAIMA</option>
+                        <option value="28">ESE HOSPITAL UNIVERSITARIO DE BARRANQUILLA</option>
+                        <option value="29">ESE JAIME ALVARADO Y CASTILLA</option>
+                        <option value="30">HOSPITAL ARROZ BARATO</option>
+                        <option value="31">HOSPITAL CANAPOTE</option>
+                        <option value="32">HOSPITAL LOCAL ISMAEL ROLDAN VALENCIA DE QUIBDO</option>
+                        <option value="33">HOSPITAL MILITAR CENTRAL</option>
+                        <option value="34">HOSPITAL UNIVERSITARIO C.A.R.I. E.S.E SEDE SALUD MENTAL</option>
+                        <option value="35">HOSPITAL UNIVERSITARIO C.A.R.I. E.S.E</option>
+                        <option value="36">HOSPITAL UNIVERSITARIO C.A.R.I. E.S.E SEDE ALTA COMPLEJIDAD</option>
+                        <option value="37">INSTITUTO DEPARTAMENTAL DE REHABILITACION Y EDUCACION ESPECIAL DEL CESAR</option>
+                        <option value="38">INSTITUTO DEPARTAMENTAL DE REHABILITACION Y EDUCACION ESPECIAL DEL CESAR - "IDREEC"</option>
+                        <option value="39">INSTITUTO NACIONAL DE CANCEROLOGIA - EMPRESA SOCIAL DEL ESTADO</option>
+                        <option value="40">PUESTO DE SALUD LA FLORIDA</option>
+                        <option value="41">PUESTO DE SALUD LAS NUEVES</option>
+                        <option value="42">SANATORIO DE AGUA DE DIOS</option>
+                        <option value="43">UNIDAD BASICA DE ATENCION COMUNA TRES</option>
+                        <option value="44">UNIDAD HOSPITALARIA SAN FERNANDO</option>
+                        <option value="45">UNIDAD PEDAGOGICA NACIONAL</option>
+                        <option value="46">VIVA 1A IPS</option>
+                    </select>
+                    <button class="btn btn-lg w-100 btn-outline-success" type="submit" name="btnAction" value="RegistrarMedico" style="width: 70%">Registrarse</button>
+                </form>
+            </div>
         </div>
-    <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <footer>
+            <div class="container table-responsive-md mx-auto" style="margin: 20px;">
+                <table class="table table-borderless border border-1 mx-auto margenMenu rounded">
+                    <tr>
+                        <td class="text-center align-middle" style="width: 30%">
+                            <img src="assets/img/log-medicina.png" style="width: 80%" alt=""/>
+                        </td>
+                        <td class="align-middle">
+                            <p style="font-size: 16px"><h5>Integrantes:</h5></p>
+                            <div class="row">
+                                <div class="col">
+                                    <ul style="font-size: 12px">
+                                        <li><h6>Andres Venegas</h6></li>
+                                        <li><h6>Monica Cristancho</h6></li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul style="font-size: 12px">
+                                        <li><h6>Gina Becerra</h6></li>
+                                        <li><h6>Diego Omana</h6></li>
+                                    </ul>
+                                 </div>
+                                <div class="col">
+                                    <ul style="font-size: 12px">
+                                        <li><h6>Christian Ordoñez</h6></li> 
+                                    </ul>
+                                 </div>
+                            </div>
+                        </td>
+                        <td class="text-center align-middle">
+                            <img src="assets/img/channels-642_misiontic_logo.png" style="width: 80%" alt=""/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </footer>
+        <script src="assets/bootstrap-5.1.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
     </body>
 </html>
